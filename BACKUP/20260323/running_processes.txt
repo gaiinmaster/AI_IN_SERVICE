@@ -1,0 +1,20 @@
+502 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+588 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+107741 node /usr/local/bin/n8n
+107755 node --disallow-code-generation-from-strings --disable-proto=delete /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+task-runner@file+packages+@n8n+task-runner_@opentelemetry+api@1.9.0_@opentelemetry_abc4e288c7f66f0b9b114d073d3c169d/node_modules/@n8n/task-runner/dist/start.js
+114898 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/orchestrator.py
+116588 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/server_manager.py
+125704 /home/ubuntu/godhand_v51/target/release/godhand_v51
+135748 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/auto_restart.py
+143460 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/inbox_runner.py
+183012 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/agents/result_collector_v3.py
+208222 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/products/detail_page/app.py
+208227 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/products/b2b_report/app.py
+210433 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/background_brain.py
+210434 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/problem_detector.py
+233579 node --no-warnings=DEP0040 /usr/bin/gemini -y
+233607 /home/ubuntu/.nvm/versions/node/v20.20.1/bin/node --no-warnings=DEP0040 /usr/bin/gemini -y
+236113 /home/ubuntu/factory_venv/bin/python3 -u /home/ubuntu/AI_IN_SAAS/products/sns_pro_C/app.py
+236708 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/bridge/comm_hub.py
+237235 /home/ubuntu/factory_venv/bin/python3 /home/ubuntu/AI_IN_SAAS/dashboard/app.py
+237310 node --no-warnings=DEP0040 /home/ubuntu/.nvm/versions/node/v20.20.1/bin/gemini -y
