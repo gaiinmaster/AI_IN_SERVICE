@@ -1,0 +1,43 @@
+{
+  "name": "TODO Auto Runner Monitor",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutes": 1
+            }
+          ]
+        }
+      },
+      "id": "trigger",
+      "name": "Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "url": "={{$env.SUPABASE_URL}}/rest/v1/todo_tasks?status=eq.pending",
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.SUPABASE_KEY}}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.SUPABASE_KEY}}"
+            }
+          ]
+        }
+      },
+      "id": "fetch_tasks",
+      "name": "Fetch Tasks",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4
+    }
+  ],
+  "active": true
+}

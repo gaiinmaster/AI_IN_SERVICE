@@ -1,0 +1,43 @@
+{
+  "name": "Daily Report",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hours": 6
+            }
+          ]
+        }
+      },
+      "id": "trigger",
+      "name": "Daily at 6am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "url": "={{$env.SUPABASE_URL}}/rest/v1/todo_tasks?select=*",
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.SUPABASE_KEY}}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.SUPABASE_KEY}}"
+            }
+          ]
+        }
+      },
+      "id": "fetch_all_tasks",
+      "name": "Fetch All Tasks",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4
+    }
+  ],
+  "active": true
+}
