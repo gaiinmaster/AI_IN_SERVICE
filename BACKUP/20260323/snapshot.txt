@@ -1,0 +1,12 @@
+=== Mon Mar 23 18:53:15 KST 2026 ===
+--- 실행중인 서비스 ---
+--- 포트 현황 ---
+LISTEN 0      4096         0.0.0.0:5678      0.0.0.0:*                                       
+LISTEN 0      128          0.0.0.0:8085      0.0.0.0:*    users:(("python3",pid=235878,fd=3))
+LISTEN 0      128          0.0.0.0:8080      0.0.0.0:*    users:(("python3",pid=235845,fd=3))
+LISTEN 0      128          0.0.0.0:8083      0.0.0.0:*    users:(("python3",pid=208227,fd=3))
+LISTEN 0      128          0.0.0.0:8082      0.0.0.0:*    users:(("python3",pid=208222,fd=3))
+LISTEN 0      4096            [::]:5678         [::]:*                                       
+--- 디스크 사용량 ---
+14M	/home/ubuntu/AI_IN_SAAS/
+2.0G	/home/ubuntu/godhand_v51/
